@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.mta.se.lab.contoller.CityEditController">
+   <children>
+      <ComboBox fx:id="countryCombo" layoutX="211.0" layoutY="117.0" onAction="#selectCountry" prefWidth="150.0" />
+      <ComboBox fx:id="cityCombo" layoutX="211.0" layoutY="167.0" onAction="#selectCity" prefWidth="150.0" />
+      <Text layoutX="211.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tara" wrappingWidth="150.0" />
+      <Text layoutX="211.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oras" wrappingWidth="150.0" />
+      <Text layoutX="207.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tema2-IP-WeatherAPP" wrappingWidth="158.0" />
+      <Button fx:id="selected" layoutX="252.0" layoutY="213.0" mnemonicParsing="false" onAction="#getInfo" prefHeight="25.0" prefWidth="80.0" text="Selecteaza" />
+      <Label fx:id="selectedCity" layoutX="45.0" layoutY="264.0" text="Oras Selectat" />
+      <Label fx:id="weatherDescription" layoutX="45.0" layoutY="305.0" text="Descriere vreme" />
+      <Label fx:id="temperature" layoutX="381.0" layoutY="264.0" text="Temperatura" />
+      <Label fx:id="humidity" layoutX="381.0" layoutY="296.0" text="Umiditate" />
+      <Label fx:id="wind" layoutX="48.0" layoutY="353.0" prefHeight="17.0" prefWidth="216.0" text="Viteza vantului" />
+      <ImageView fitHeight="148.0" fitWidth="150.0" layoutX="14.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="eroare" layoutX="381.0" layoutY="69.0" prefHeight="92.0" prefWidth="178.0" textFill="#9e2a2a" />
+   </children>
+</AnchorPane>
