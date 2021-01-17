@@ -1,0 +1,14 @@
+La data si ora :17-01-2021 01:53:51,Orasul: Razvilka,Descrierea vremii:ninsoare,Temperatura a fost:-16 grade Celsius
+La data si ora :17-01-2021 01:53:57,Orasul: Iasi,Descrierea vremii:nori împr�?știați,Temperatura a fost:-12 grade Celsius
+La data si ora :17-01-2021 01:54:03,Orasul: Barcelona,Descrierea vremii:câțiva nori,Temperatura a fost:7 grade Celsius
+La data si ora :17-01-2021 01:56:27,Orasul: Madrid,Descrierea vremii:ceaț�?,Temperatura a fost:0 grade Celsius
+La data si ora :17-01-2021 01:56:36,Orasul: Porto,Descrierea vremii:cer senin,Temperatura a fost:3 grade Celsius
+La data si ora :17-01-2021 01:56:48,Orasul: Rome,Descrierea vremii:cer senin,Temperatura a fost:1 grade Celsius
+La data si ora :17-01-2021 14:13:04,Orasul: Razvilka,Descrierea vremii:cer fragmentat,Temperatura a fost:-18 grade Celsius
+La data si ora :17-01-2021 14:34:14,Orasul: Vaslui,Descrierea vremii:câțiva nori,Temperatura a fost:-6 grade Celsius
+La data si ora :17-01-2021 14:34:23,Orasul: Moscow,Descrierea vremii:cer senin,Temperatura a fost:-18 grade Celsius
+La data si ora :17-01-2021 14:34:30,Orasul: Tarascon,Descrierea vremii:cer senin,Temperatura a fost:11 grade Celsius
+La data si ora :17-01-2021 14:34:51,Orasul: Iasi,Descrierea vremii:câțiva nori,Temperatura a fost:-5 grade Celsius
+La data si ora :17-01-2021 14:36:03,Orasul: Tarascon,Descrierea vremii:cer senin,Temperatura a fost:11 grade Celsius
+La data si ora :17-01-2021 16:34:16,Orasul: Tarascon,Descrierea vremii:cer senin,Temperatura a fost:12 grade Celsius
+La data si ora :17-01-2021 16:34:31,Orasul: Razvilka,Descrierea vremii:nori împr�?știați,Temperatura a fost:-19 grade Celsius
