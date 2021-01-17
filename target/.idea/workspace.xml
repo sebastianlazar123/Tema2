@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8e1d476d-a2ab-46a0-86d7-f4f78dac748d" name="Default Changelist" comment="Fisierul pom.xml si arhitectura de baza&#10;&#10;Implementeaza scheletul aplicatiei, creeaza directoare specifice lucrului cu MVC si adauga fisierul pom.xml&#10;&#10;Autor: Lazar Constantin-Sebastian">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/contoller/CityEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/contoller/CityEditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/mta/se/lab/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/mta/se/lab/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/mta/se/lab/contoller/CityEditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/mta/se/lab/contoller/CityEditController.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="main" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="sebastianlazar123" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="Tema2-IP-WeatherApp" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/sebastianlazar123/Tema2-IP-WeatherApp" />
+        <option value="https://github.com/sebastianlazar123/WebApp" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1n7aMKcPCUpQ8ddbQKkSAYZeSIr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+  </component>
+  <component name="RunManager" selected="Maven.WebApp [clean,compile,javafx:run]">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ro.mta.se.lab.Main" />
+      <module name="WebApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ro.mta.se.lab.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebApp [clean,compile,javafx:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="compile" />
+                <option value="javafx:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Maven.WebApp [clean,compile,javafx:run]" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8e1d476d-a2ab-46a0-86d7-f4f78dac748d" name="Default Changelist" comment="" />
+      <created>1610743533871</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610743533871</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Fisierul pom.xml si arhitectura de baza&#10;&#10;Implementeaza scheletul aplicatiei, creeaza directoare specifice lucrului cu MVC si adauga fisierul pom.xml&#10;&#10;Autor: Lazar Constantin-Sebastian">
+      <created>1610747030742</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610747030742</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fisierul pom.xml si arhitectura de baza&#10;&#10;Implementeaza scheletul aplicatiei, creeaza directoare specifice lucrului cu MVC si adauga fisierul pom.xml&#10;&#10;Autor: Lazar Constantin-Sebastian" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fisierul pom.xml si arhitectura de baza&#10;&#10;Implementeaza scheletul aplicatiei, creeaza directoare specifice lucrului cu MVC si adauga fisierul pom.xml&#10;&#10;Autor: Lazar Constantin-Sebastian" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1610744559135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1610744559135" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610814089145">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610814089145" />
+    <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1610808132115">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610808132115" />
+    <state x="696" y="387" key="Github.CreatePullRequestDialog" timestamp="1610750020245">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="696" y="387" key="Github.CreatePullRequestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610750020245" />
+    <state x="838" y="418" key="Github.ShareDialog" timestamp="1610749373324">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="838" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610749373324" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1610816329054">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610816329054" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1610816329054">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610816329054" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1610816329054">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610816329054" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1610816329054">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610816329054" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1610801511773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1610801511773" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610751643333">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610751643333" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610814601671">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610814601671" />
+  </component>
+</project>
