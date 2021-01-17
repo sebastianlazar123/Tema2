@@ -1,0 +1,3 @@
+La data si ora :17-01-2021 01:53:51,Orasul: Razvilka,Descrierea vremii:ninsoare,Temperatura a fost:-16 grade Celsius
+La data si ora :17-01-2021 01:53:57,Orasul: Iasi,Descrierea vremii:nori împr�?știați,Temperatura a fost:-12 grade Celsius
+La data si ora :17-01-2021 01:54:03,Orasul: Barcelona,Descrierea vremii:câțiva nori,Temperatura a fost:7 grade Celsius

@@ -7,8 +7,25 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import org.apache.commons.io.IOUtils;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import ro.mta.se.lab.model.City;
+
+import java.io.*;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class CityEditController {
+    private ObservableList<City>options=FXCollections.observableArrayList();
+    private ObservableList<String>list=FXCollections.observableArrayList();
+    private ObservableList<String>cityList2=FXCollections.observableArrayList();
+    private String findCityinfo;
+    private String findCountryinfo;
     @FXML
     private ComboBox cityCombo;
     @FXML
@@ -25,50 +42,108 @@ public class CityEditController {
     private Label wind;
     @FXML
     private Button selected;
+    @FXML
+    private Label eroare;
 
 
     public void selectCountry(ActionEvent actionEvent) {
-
-        String s = countryCombo.getSelectionModel().getSelectedItem().toString();
-        if(s.equals("RO"))
+        String s=null;
+        if(countryCombo.getSelectionModel().getSelectedItem()!=null)
+        s = countryCombo.getSelectionModel().getSelectedItem().toString();
+        findCountryinfo=s;
+        int i=0;
+        if(!cityList2.isEmpty())
         {
-            ObservableList<String>cityList= FXCollections.observableArrayList("Iasi","Bucuresti");
-            cityCombo.setItems(cityList);
+            cityList2.clear();
+        }
+        for(i=0;i<options.size();i++)
+        {
+            if(options.get(i).getCountry().contains(s))
+            {
+                cityList2.add(options.get(i).getCityName());
+            }
 
         }
-        if(s.equals("HU"))
-        {
-            ObservableList<String>cityList= FXCollections.observableArrayList("Budapesta","Debrecen");
-            cityCombo.setItems(cityList);
 
-        }
-        if(s.equals("UK"))
-        {
-            ObservableList<String>cityList= FXCollections.observableArrayList("Kiev","Donetsk");
-            cityCombo.setItems(cityList);
-
-        }
-        if(s.equals("FR"))
-        {
-            ObservableList<String>cityList= FXCollections.observableArrayList("Paris","Lyon");
-            cityCombo.setItems(cityList);
-
-        }
-        if(s.equals("SP"))
-        {
-            ObservableList<String>cityList= FXCollections.observableArrayList("Madrid","Barcelona");
-            cityCombo.setItems(cityList);
-
-        }
+        cityCombo.setItems(cityList2);
     }
 
     public void selectCity(ActionEvent actionEvent) {
-        String s = countryCombo.getSelectionModel().getSelectedItem().toString();
-        selectedCity.setText(s);
+        String s=null;
+        if(cityCombo.getSelectionModel().getSelectedItem()!=null)
+        s = cityCombo.getSelectionModel().getSelectedItem().toString();
+        findCityinfo=s;
+    }
+    public void getInfo(ActionEvent actionEvent) throws IOException, JSONException {
+        URL link;
+        String s=null;
+        if(findCountryinfo!=null &&findCityinfo!=null) {
+            s="Orasul : "+findCityinfo;
+            selectedCity.setText(s);
+            eroare.setText("");
+            link = new URL("http://api.openweathermap.org/data/2.5/weather?q=" + findCityinfo + "," + findCountryinfo + "&appid=1ea572eb3298134d404f1c9572107c7e&lang=ro&units=metric");
+            URLConnection connectionEstabilished = link.openConnection();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(connectionEstabilished.getInputStream()));
+            String down = IOUtils.toString(reader);
+            JSONObject obj = new JSONObject(down);
+            JSONArray arr = obj.getJSONArray("weather");
+            String post_id = "Descrierea vremii : " + arr.getJSONObject(0).getString("description");
+            weatherDescription.setText(post_id);
+            int p = obj.getJSONObject("main").getInt("humidity");
+            humidity.setText("Umiditate este : " + String.valueOf(p) + "%");
+            temperature.setText("Temperatura este :" + String.valueOf(obj.getJSONObject("main").getInt("temp")) + " grade Celsius");
+            wind.setText("Viteza vantului este :" + String.valueOf(obj.getJSONObject("wind").getInt("speed")) + "m/s");
+            Date date = new Date();
+            SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+            String toHistory="La data si ora :"+formatter.format(date)+",Orasul: "+findCityinfo+",Descrierea vremii:"+arr.getJSONObject(0).getString("description")+",Temperatura a fost:";
+            toHistory=toHistory+String.valueOf(obj.getJSONObject("main").getInt("temp")) + " grade Celsius";
+            FileWriter outputFile=new FileWriter("src/main/resources/istoric.txt",true);
+            outputFile.write(toHistory);
+            outputFile.write("\n");
+            outputFile.close();
+            findCityinfo = null;
+            findCountryinfo = null;
+        }
+        else
+        {
+            eroare.setText("Alege inainte sa apesi butonul!");
+        }
+    }
+    private void read_context() throws IOException {
+        File file = new File("src/main/resources/orase");
+        if (file.exists()) {
+
+            BufferedReader buffer = new BufferedReader(new FileReader(file));
+
+            String str;
+            str= buffer.readLine();
+            while ((str = buffer.readLine()) != null) {
+
+                String[] file_data = str.split("\t");
+                City aux = new City(file_data[0], file_data[1], file_data[4]);
+                options.add(aux);
+                int i=0;
+                for(i=0; i<list.size() ;i++)
+                {
+                    if(file_data[4].equals(list.get(i)))
+                    {
+                    i= list.size()+2;
+                    }
+                }
+                if(i==list.size())
+                {
+                    list.add(file_data[4]);
+                }
+
+            }
+
+        }
     }
     @FXML
-    public void initialize(){
-        ObservableList<String>list= FXCollections.observableArrayList("RO","HU","UK","FR","SP");
+    public void initialize()throws IOException{
+        //ObservableList<String>list= FXCollections.observableArrayList("RO","HU","UK","FR","SP");
+
+            read_context();
         countryCombo.setItems(list);
     }
 }
