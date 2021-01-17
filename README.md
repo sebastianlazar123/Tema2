@@ -2,7 +2,7 @@
 ## Tema2-IP-WeatherApp - - -Autor: Lazăr Sebastian
  :cloud: :cloud: :cloud:
 Aplicatia Tema2-IP-WeatherApp răspunde cerințelor temei 2.
-Este nevoie de un fișier de intrare(orase.txt in cadrul porietctului) ce trebuie sa conțină câmpurile id, longitudine,latitudine,numele orașului si codul țării. Pentru fiecare linie din fișierul de intrare câmpurile vor fi distanțate prin tab.
+Este nevoie de un fișier de intrare(orase in cadrul porietctului) ce trebuie sa conțină câmpurile id, longitudine,latitudine,numele orașului si codul țării. Pentru fiecare linie din fișierul de intrare câmpurile vor fi distanțate prin tab.
 Aplicația obține informații legate de vreme pentru orașul selectat de utilizator. Informațiile se obțin prin OpenWeather API.
 Aplicația reține răspunsurile pentru fiecare utilizare a acesteia în fișierul istoric.txt.
 Se folosește ahitectura MVC.
@@ -11,7 +11,7 @@ Se folosește ahitectura MVC.
 
 ## Modul de utilizare al aplicației și testarea acesteia
  :cloud: :cloud: :cloud:
-Aplicația vine cu o serie de orașe în cadrul fișierului orase.txt . Se pot adăuga și alte orașe în acel fișier cât timp se respectă structura.
+Aplicația vine cu o serie de orașe în cadrul fișierului orase . Se pot adăuga și alte orașe în acel fișier cât timp se respectă structura.
 În momentul în care se rulează aplicația trebuie ales câmpul Tara. În acea listă se regăsesc codurile țărilor identificate în fișierul de intrare.
 După ce se selectează țara la nivelul listei de orașe se generează orașele disponibile pentru țara selectată.
 Se alege orașul și se apasă butonul "Selecteaza" . După apăsarea butonului se vor afișa datele legate de vremea în orașul respectiv. Totodată se adaugă informații în fișierul istoric.txt .
